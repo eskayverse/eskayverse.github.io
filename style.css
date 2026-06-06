@@ -16,11 +16,16 @@ justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 border-bottom:1px solid #1c2330;
+background:#0b0f14;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 .logo{
-font-weight:700;
-letter-spacing:4px;
+font-weight:800;
+font-size:1.2rem;
+letter-spacing:5px;
 }
 
 nav{
@@ -31,6 +36,11 @@ gap:20px;
 nav a{
 color:#9ca3af;
 text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
 }
 
 .hero{
@@ -46,11 +56,13 @@ background:linear-gradient(
 .hero h1{
 font-size:4rem;
 margin-bottom:15px;
+text-shadow:0 0 25px rgba(255,255,255,.15);
 }
 
 .hero p{
 color:#94a3b8;
 margin-bottom:25px;
+font-size:1.05rem;
 }
 
 .btn{
@@ -59,6 +71,13 @@ padding:14px 24px;
 border-radius:12px;
 text-decoration:none;
 color:white;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(37,99,235,.35);
 }
 
 #materials{
@@ -67,6 +86,7 @@ padding:70px 8%;
 
 #materials h2{
 margin-bottom:25px;
+font-size:2rem;
 }
 
 .grid{
@@ -80,18 +100,22 @@ background:#131a24;
 padding:28px;
 border-radius:18px;
 border:1px solid #202938;
-transition:.25s;
+transition:.3s;
+cursor:pointer;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px) scale(1.02);
 border-color:#2563eb;
+box-shadow:0 10px 25px rgba(37,99,235,.25);
 }
 
 footer{
 text-align:center;
-padding:40px;
+padding:60px 20px;
 color:#7c8798;
+border-top:1px solid #1c2330;
+margin-top:60px;
 }
 
 @media(max-width:768px){
