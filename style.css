@@ -7,7 +7,7 @@ font-family:Segoe UI,sans-serif;
 
 body{
 background:#0b0f14;
-color:white;
+color:#fff;
 }
 
 header{
@@ -17,14 +17,11 @@ align-items:center;
 padding:20px 8%;
 border-bottom:1px solid #1c2330;
 background:#0b0f14;
-position:sticky;
-top:0;
-z-index:100;
 }
 
 .logo{
-font-weight:800;
 font-size:1.2rem;
+font-weight:800;
 letter-spacing:5px;
 }
 
@@ -36,7 +33,6 @@ gap:20px;
 nav a{
 color:#9ca3af;
 text-decoration:none;
-transition:.3s;
 }
 
 nav a:hover{
@@ -46,38 +42,26 @@ color:white;
 .hero{
 text-align:center;
 padding:140px 20px;
-background:linear-gradient(
-180deg,
-#111827,
-#0b0f14
-);
+background:linear-gradient(180deg,#111827,#0b0f14);
 }
 
 .hero h1{
 font-size:4rem;
 margin-bottom:15px;
-text-shadow:0 0 25px rgba(255,255,255,.15);
 }
 
 .hero p{
 color:#94a3b8;
 margin-bottom:25px;
-font-size:1.05rem;
 }
 
 .btn{
-background:#2563eb;
-padding:14px 24px;
-border-radius:12px;
-text-decoration:none;
-color:white;
 display:inline-block;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(37,99,235,.35);
+padding:14px 24px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:12px;
 }
 
 #materials{
@@ -105,17 +89,16 @@ cursor:pointer;
 }
 
 .card:hover{
-transform:translateY(-8px) scale(1.02);
+transform:translateY(-8px);
 border-color:#2563eb;
-box-shadow:0 10px 25px rgba(37,99,235,.25);
 }
 
 footer{
 text-align:center;
-padding:60px 20px;
+padding:50px 20px;
 color:#7c8798;
+margin-top:50px;
 border-top:1px solid #1c2330;
-margin-top:60px;
 }
 
 @media(max-width:768px){
@@ -125,13 +108,13 @@ flex-direction:column;
 gap:15px;
 }
 
-.hero h1{
-font-size:2.5rem;
-}
-
 nav{
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.hero h1{
+font-size:2.5rem;
 }
 
 }
