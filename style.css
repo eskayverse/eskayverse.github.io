@@ -2,12 +2,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Inter,Segoe UI,sans-serif;
+font-family:Segoe UI,sans-serif;
 }
 
 body{
 background:#0b0f14;
-color:#fff;
+color:white;
 }
 
 header{
@@ -15,66 +15,58 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-border-bottom:1px solid #1b2430;
-background:#0b0f14;
-position:sticky;
-top:0;
-z-index:100;
+border-bottom:1px solid #1c2330;
 }
 
 .logo{
-font-size:1.1rem;
 font-weight:700;
 letter-spacing:4px;
 }
 
 nav{
 display:flex;
-gap:25px;
+gap:20px;
 }
 
 nav a{
+color:#9ca3af;
 text-decoration:none;
-color:#a0aec0;
 }
 
 .hero{
-min-height:60vh;
-display:flex;
-align-items:center;
-justify-content:center;
 text-align:center;
-padding:40px;
-background:radial-gradient(circle at top,#1e293b,#0b0f14);
+padding:140px 20px;
+background:linear-gradient(
+180deg,
+#111827,
+#0b0f14
+);
 }
 
-.hero-content h1{
+.hero h1{
 font-size:4rem;
 margin-bottom:15px;
-letter-spacing:3px;
 }
 
-.hero-content p{
+.hero p{
 color:#94a3b8;
 margin-bottom:25px;
 }
 
-.cta{
-display:inline-block;
+.btn{
+background:#2563eb;
 padding:14px 24px;
 border-radius:12px;
-background:#2563eb;
-color:white;
 text-decoration:none;
+color:white;
 }
 
-.materials{
+#materials{
 padding:70px 8%;
 }
 
-.materials h2{
+#materials h2{
 margin-bottom:25px;
-font-size:2rem;
 }
 
 .grid{
@@ -88,7 +80,7 @@ background:#131a24;
 padding:28px;
 border-radius:18px;
 border:1px solid #202938;
-transition:0.25s;
+transition:.25s;
 }
 
 .card:hover{
@@ -109,12 +101,13 @@ flex-direction:column;
 gap:15px;
 }
 
+.hero h1{
+font-size:2.5rem;
+}
+
 nav{
 flex-wrap:wrap;
 justify-content:center;
 }
 
-.hero-content h1{
-font-size:2.5rem;
-}
 }
