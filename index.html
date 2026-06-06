@@ -5,142 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EskayVerse</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Inter,Segoe UI,sans-serif;
-}
-
-body{
-    background:#0f1115;
-    color:#fff;
-}
-
-.hero{
-    padding:80px 25px 60px;
-    text-align:center;
-    background:linear-gradient(180deg,#161a22,#0f1115);
-}
-
-.hero h1{
-    font-size:3rem;
-    letter-spacing:2px;
-    font-weight:700;
-}
-
-.hero p{
-    color:#9aa4b2;
-    margin-top:15px;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    font-size:1.4rem;
-    margin:40px 0 20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:18px;
-}
-
-.card{
-    background:#171c25;
-    border:1px solid #232a35;
-    border-radius:18px;
-    padding:24px;
-    transition:.25s;
-    cursor:pointer;
-}
-
-.card:hover{
-    transform:translateY(-4px);
-    border-color:#3b82f6;
-}
-
-.card h3{
-    font-size:1rem;
-}
-
-.links{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-    margin:50px 0;
-}
-
-.btn{
-    text-decoration:none;
-    color:white;
-    background:#1f2937;
-    padding:12px 22px;
-    border-radius:12px;
-    border:1px solid #2e3744;
-}
-
-.btn:hover{
-    border-color:#3b82f6;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#7b8794;
-    border-top:1px solid #1d2430;
-    margin-top:50px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
+    <div class="logo">ESKAYVERSE</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Materials</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
 <section class="hero">
     <h1>ESKAYVERSE</h1>
-    <p>Organized editing resources.</p>
 </section>
 
-<div class="container">
+<section class="materials">
 
-    <h2 class="section-title">Materials</h2>
+    <h2>Materials</h2>
 
     <div class="grid">
 
-        <div class="card"><h3>Editing Apps</h3></div>
+        <div class="card">Editing Apps</div>
 
-        <div class="card"><h3>Overlays</h3></div>
+        <div class="card">Overlays</div>
 
-        <div class="card"><h3>Lightroom Presets</h3></div>
+        <div class="card">Lightroom Presets</div>
 
-        <div class="card"><h3>Editing Video XMLs</h3></div>
+        <div class="card">Editing Video XMLs</div>
 
-        <div class="card"><h3>After Effects Plugins</h3></div>
+        <div class="card">After Effects Plugins</div>
 
-        <div class="card"><h3>SFX</h3></div>
+        <div class="card">SFX</div>
 
-        <div class="card"><h3>Fonts</h3></div>
+        <div class="card">Fonts</div>
 
-        <div class="card"><h3>Links</h3></div>
+        <div class="card">Links</div>
 
     </div>
 
-    <div class="links">
-        <a class="btn" href="https://t.me/eskayverse">Telegram</a>
-        <a class="btn" href="https://instagram.com/eskayverse">Instagram</a>
-    </div>
+</section>
 
-</div>
+<section class="social">
 
-<footer>
-    EskayVerse
-</footer>
+    <a href="https://t.me/eskayverse">Telegram</a>
+
+    <a href="https://instagram.com/eskayverse">Instagram</a>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
