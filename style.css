@@ -2,12 +2,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:Inter,Segoe UI,sans-serif;
 }
 
 body{
 background:#0b0f14;
-color:#ffffff;
+color:#fff;
 }
 
 header{
@@ -15,16 +15,17 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-border-bottom:1px solid #1c2330;
+border-bottom:1px solid #1b2430;
 background:#0b0f14;
 position:sticky;
 top:0;
+z-index:100;
 }
 
 .logo{
-font-size:1.2rem;
+font-size:1.1rem;
 font-weight:700;
-letter-spacing:3px;
+letter-spacing:4px;
 }
 
 nav{
@@ -34,31 +35,46 @@ gap:25px;
 
 nav a{
 text-decoration:none;
-color:#9ca3af;
+color:#a0aec0;
 }
 
 .hero{
-padding:120px 20px;
+min-height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-background:linear-gradient(180deg,#111827,#0b0f14);
+padding:40px;
+background:radial-gradient(circle at top,#1e293b,#0b0f14);
 }
 
-.hero h1{
+.hero-content h1{
 font-size:4rem;
-margin-bottom:10px;
+margin-bottom:15px;
+letter-spacing:3px;
 }
 
-.hero p{
+.hero-content p{
 color:#94a3b8;
+margin-bottom:25px;
+}
+
+.cta{
+display:inline-block;
+padding:14px 24px;
+border-radius:12px;
+background:#2563eb;
+color:white;
+text-decoration:none;
 }
 
 .materials{
-padding:60px 8%;
+padding:70px 8%;
 }
 
 .materials h2{
 margin-bottom:25px;
-font-size:1.8rem;
+font-size:2rem;
 }
 
 .grid{
@@ -68,37 +84,22 @@ gap:20px;
 }
 
 .card{
-background:#141b25;
+background:#131a24;
 padding:28px;
 border-radius:18px;
 border:1px solid #202938;
-transition:.25s;
-cursor:pointer;
+transition:0.25s;
 }
 
 .card:hover{
 transform:translateY(-5px);
-border-color:#3b82f6;
+border-color:#2563eb;
 }
 
-.social{
-display:flex;
-justify-content:center;
-gap:20px;
-padding:60px 20px;
-}
-
-.social a{
-text-decoration:none;
-color:white;
-padding:14px 24px;
-border-radius:12px;
-background:#1a2230;
-border:1px solid #283244;
-}
-
-.social a:hover{
-border-color:#3b82f6;
+footer{
+text-align:center;
+padding:40px;
+color:#7c8798;
 }
 
 @media(max-width:768px){
@@ -108,12 +109,12 @@ flex-direction:column;
 gap:15px;
 }
 
-.hero h1{
-font-size:2.5rem;
-}
-
 nav{
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.hero-content h1{
+font-size:2.5rem;
 }
 }
